@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Webseite mit Zeitspannen</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="buttons">
+            <button id="hochBtn">Hoch</button>
+            <button id="runterBtn">Runter</button>
+        </div>
+
+        <div class="time-section">
+            <label for="timeName">Name der Zeitspanne:</label>
+            <input type="text" id="timeName" placeholder="Name der Zeitspanne">
+            <br>
+            <label for="startTime">Startzeit:</label>
+            <input type="time" id="startTime">
+            <label for="endTime">Endzeit:</label>
+            <input type="time" id="endTime">
+            <br><br>
+            <button id="setTimeSpanBtn">Setze Zeitspanne</button>
+            <p id="timeSpanStatus"></p>
+        </div>
+
+        <div class="time-table">
+            <h3>Gespeicherte Zeitspannen:</h3>
+            <table id="timeSpanTable">
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Startzeit</th>
+                        <th>Endzeit</th>
+                        <th>Aktion</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Hier werden die Zeitspannen dynamisch eingefügt -->
+                </tbody>
+            </table>
+        </div>
+
+        <div class="buttons">
+            <button id="speichernBtn">Speichern</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
